@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    background-position: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    background-attachment: fixed;
+}
+
+.logo{
+    color: hsl(86, 96%, 37%);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+img{
+    width: 95px;
+    height: 95px;
+    border-radius: 35%;
+    cursor: pointer;
+}
+
+.links{
+    color: hsl(86, 96%, 37%);
+    font-size: 30px;
+    cursor: pointer;
+    text-align: right; 
+}
+
+.content{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+    background-color: aquamarine;
+}
+
+.wrapper, .container{
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.page {
+    width: 80%;  
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.custom-file {
+    background-color: #00bcd4;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-file:hover{
+    transform: scale(1.05);
+}
+
+#fileInput {
+    display: none;
+}
+
+.btn-primary {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5722;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
