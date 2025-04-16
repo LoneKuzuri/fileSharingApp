@@ -14,6 +14,8 @@ body{
     color: hsl(86, 96%, 37%);
     font-size: 35px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 img{
@@ -21,11 +23,12 @@ img{
     height: 95px;
     border-radius: 35%;
     cursor: pointer;
+    margin: 0 20px;
 }
 
 .links{
     color: hsl(86, 96%, 37%);
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
     text-align: right; 
 }
@@ -48,8 +51,8 @@ img{
 }
 
 .page {
-    width: 80%;  
-    max-width: 900px;
+    width: 80vw;  
+    max-width: 600px;
     padding: 30px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -91,5 +94,38 @@ img{
 .btn-primary:hover {
     background-color: #e64a19;
     transform: scale(1.05);
+}
+
+.head {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.intro{
+    text-align: center;
+    /* color: #fff; */
+    /* position: center; */
+
+}
+
+.intro-content{
+    border: 2px dashed rgb(6, 42, 63);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(1, 24, 24, 0.1);
+    margin-bottom: 20px;
 }
 
