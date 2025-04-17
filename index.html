@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Sharing App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 <body>
     <div class="wrapper">
@@ -18,12 +16,6 @@
                        <img src="./Logo.jpeg" alt="logo">
                        <strong>ShareFiles</strong> 
                     </div>
-                    <div class="links">
-                        <a class="profile"><i class="fas fa-user-secret"></i></a>
-                        <a class="text"><i class="fas fa-paper-plane"></i>Send</a>
-                        <a class="text"><i class="fas fa-download"></i>Download</a>
-
-                    </div>
                 </div>
                </header> 
 <section class="content new-content">
@@ -31,17 +23,17 @@
         <h1 class="head">Simple and reliable File transfer</h1>
         <div class="intro-content">
             <input type="file" id="fileInput" class="mb-3">
+            <div id="filePreview" class="preview"></div>
             <label for="fileInput" class="custom-file">Upload File</label>
         </div>
-        <button class="btn-primary" id="uploadButton">Share</button>
+        <button type="button"  id="uploadButton">Share</button>
+        <div id="shareableLink" class="link"></div>
+   
     </div>
 </section>
-
-
-
-
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

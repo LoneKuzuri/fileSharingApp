@@ -14,7 +14,7 @@ body{
     color: hsl(86, 96%, 37%);
     font-size: 35px;
     cursor: pointer;
-    display: flex;
+    display: flex; /*logo lai milauna ko laagi*/
     flex-direction: column;
 }
 
@@ -24,13 +24,6 @@ img{
     border-radius: 35%;
     cursor: pointer;
     margin: 0 20px;
-}
-
-.links{
-    color: hsl(86, 96%, 37%);
-    font-size: 25px;
-    cursor: pointer;
-    text-align: right; 
 }
 
 .content{
@@ -81,7 +74,7 @@ img{
     display: none;
 }
 
-.btn-primary {
+button {
     padding: 10px 25px;
     border: none;
     border-radius: 8px;
@@ -91,7 +84,7 @@ img{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.btn-primary:hover {
+button:hover {
     background-color: #e64a19;
     transform: scale(1.05);
 }
@@ -129,3 +122,14 @@ img{
     margin-bottom: 20px;
 }
 
+.preview img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  .preview p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+  }
+  
